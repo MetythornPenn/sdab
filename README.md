@@ -13,18 +13,26 @@ Model homepage: https://huggingface.co/metythorn/khmer-asr-openslr
 ## Install From Source
 
 ```sh
+# clone repo 
+git clone https://github.com/MetythornPenn/sdab.git
+
+# install lib from source
 pip install -e .
 ```
 
 ## Usage
 
+inference code : inference.ipynb
+
 ```python
 from sdab import Sdab
 
-file_path = "path_to_your_audio_file.wav"
+file_path = "sample/audio.wav"
 model_name = "metythorn/khmer-asr-openslr"  # or local directory path
 sdab = Sdab( file_path = file_path, model_name = model_name ,device='cpu', tokenized= False)
 print(sdab.result)
+
+# result : ស្ពានកំពងចំលងអ្នកលើងនៅព្រីវែញជាស្ពានវេញជាងគេសក្នុងព្រសរាជាអាចកម្ពុជា
 
 ```
 
