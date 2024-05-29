@@ -42,3 +42,8 @@ print(sdab.result)
 - device : Should be CPU or CUDA but I use CPU by default
 - tokenized: show [PAD] in output
 - return: Khmer text from ASR
+
+## Reference 
+- Khmer word segmentation from SeangHay [khmercut](https://github.com/seanghay/khmercut.git) | [khmersegment](https://github.com/seanghay/khmersegment)
+- Wav2Vec2 from Facebook [Wav2Vec2]()
+- Inspired by [Thai Dev]()
