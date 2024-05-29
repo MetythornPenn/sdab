@@ -45,5 +45,5 @@ print(sdab.result)
 
 ## Reference 
 - Khmer word segmentation from SeangHay [khmercut](https://github.com/seanghay/khmercut.git) | [khmersegment](https://github.com/seanghay/khmersegment)
-- Wav2Vec2 from Facebook [Wav2Vec2]()
-- Inspired by [Thai Dev]()
+- Wav2Vec2 from Facebook [Wav2Vec2](https://github.com/facebookresearch/fairseq/blob/main/examples/wav2vec/README.md)
+- Inspired by [Thai Dev](https://www.youtube.com/watch?v=ekhFo-6JzLQ&t=28s)
