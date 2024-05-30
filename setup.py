@@ -28,7 +28,7 @@ setup(
     long_description=(read('README.md')),
     long_description_content_type='text/markdown',
 	classifiers= [
-		'Natural Language :: Khmer',
+		'Natural Language :: English',
 		'License :: OSI Approved :: Apache Software License',
 		'Operating System :: OS Independent',
 		'Programming Language :: Python :: 3',
