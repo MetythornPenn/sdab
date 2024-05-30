@@ -9,23 +9,39 @@ License: [Apache-2.0 License](https://github.com/MetythornPenn/sdab/blob/main/LI
 
 Pretrain Model: [Huggingface](https://huggingface.co/metythorn/khmer-asr-openslr)
 
-## Install From Source
+## Installation
+
+
+#### Install from source
+```sh
+pip install sdab
+```
+
+#### Install from source
 
 ```sh
 
 # clone repo 
 git clone https://github.com/MetythornPenn/sdab.git
 
-# install lib from source (recommend python 3.8)
+# install lib from source
 pip install -e .
 ```
 
 ## Usage
 
+#### Download sample audio
+
+```bash
+wget -O audio.wav https://github.com/MetythornPenn/sdab/blob/main/sample/audio.wav
+```
+
+#### Python API
+
 ```python
 from sdab import Sdab
 
-file_path = "sample/audio.wav"
+file_path = "audio.wav"
 model_name = "metythorn/khmer-asr-openslr"  # or local directory path
 
 sdab = Sdab( file_path = file_path, model_name = model_name)

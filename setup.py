@@ -16,7 +16,7 @@ requirements = [
 
 setup(
     name='sdab',
-    version='0.1.0',
+    version='0.1.1',
     packages=['sdab'],
     url='https://github.com/MetythornPenn/sdab.git',
     license='Apache Software License 2.0',
