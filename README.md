@@ -1,7 +1,5 @@
 # Sdab
 
-<hr>
-
 #### Khmer Automatic Speech Recognition
 
  
@@ -9,40 +7,40 @@ Sdab is a Python package for Automatic Speech Recognition with focus on Khmer la
 
 License: [Apache-2.0 License](https://github.com/MetythornPenn/sdab/blob/main/LICENSE)
 
-Model homepage: https://huggingface.co/metythorn/khmer-asr-openslr
+Pretrain Model: [Huggingface](https://huggingface.co/metythorn/khmer-asr-openslr)
 
 ## Install From Source
 
 ```sh
+
 # clone repo 
 git clone https://github.com/MetythornPenn/sdab.git
 
-# install lib from source
+# install lib from source (recommend python 3.8)
 pip install -e .
 ```
 
 ## Usage
 
-inference code : inference.ipynb
 
 ```python
 from sdab import Sdab
 
 file_path = "sample/audio.wav"
 model_name = "metythorn/khmer-asr-openslr"  # or local directory path
-sdab = Sdab( file_path = file_path, model_name = model_name ,device='cpu', tokenized= False)
+
+sdab = Sdab( file_path = file_path, model_name = model_name)
 print(sdab.result)
 
 # result : ស្ពានកំពងចំលងអ្នកលើងនៅព្រីវែញជាស្ពានវេញជាងគេសក្នុងព្រសរាជាអាចកម្ពុជា
 
 ```
 
-
-- file_path: path of sound file
-- model_name : pretrain model path from huggingface or local
-- device : Should be CPU or CUDA but I use CPU by default
-- tokenized: show [PAD] in output
-- return: Khmer text from ASR
+- `file_path`: path of audio file
+- `model_name` : pretrain model path from `huggingface` or `local`
+- `device` : should be `cpu` or `cuda` but I use `cpu` by default
+- `tokenized`: show `[PAD]` in output, `False` by default
+- `return`: Khmer text from ASR
 
 ## Reference 
 - Inspired by [Techcast](https://www.youtube.com/watch?v=ekhFo-6JzLQ&t=28s)
