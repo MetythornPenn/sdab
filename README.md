@@ -22,18 +22,16 @@ pip install -e .
 
 ## Usage
 
-
 ```python
 from sdab import Sdab
 
 file_path = "sample/audio.wav"
 model_name = "metythorn/khmer-asr-openslr"  # or local directory path
 
-sdab = Sdab( file_path = file_path, model_name = model_name)
+sdab = Sdab(file_path, model_name)
 print(sdab.result)
 
 # result : ស្ពានកំពងចំលងអ្នកលើងនៅព្រីវែញជាស្ពានវេញជាងគេសក្នុងព្រសរាជាអាចកម្ពុជា
-
 ```
 
 - `file_path`: path of audio file
