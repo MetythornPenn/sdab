@@ -1,12 +1,13 @@
 # Sdab
 
-Khmer Automatic Speech Recognition
+<hr>
 
- <a href="https://pypi.python.org/pypi/pythaiasr"><img alt="pypi" src="https://img.shields.io/pypi/v/pythaiasr.svg"/></a><a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a><a href="https://github.com/MetythornPenn/sdab">
+#### Khmer Automatic Speech Recognition
 
+ 
 Sdab is a Python package for Automatic Speech Recognition with focus on Khmer language. It have offline khmer automatic speech recognition model from my Pretrain Model and other that using Wav2Vec2 model.
 
-License: [Apache-2.0 License](https://github.com/PyThaiNLP/pythaiasr/blob/main/LICENSE)
+License: [Apache-2.0 License](https://github.com/MetythornPenn/sdab/blob/main/LICENSE)
 
 Model homepage: https://huggingface.co/metythorn/khmer-asr-openslr
 
@@ -44,6 +45,6 @@ print(sdab.result)
 - return: Khmer text from ASR
 
 ## Reference 
+- Inspired by [Techcast](https://www.youtube.com/watch?v=ekhFo-6JzLQ&t=28s)
 - Khmer word segmentation from SeangHay [khmercut](https://github.com/seanghay/khmercut.git) | [khmersegment](https://github.com/seanghay/khmersegment)
 - Wav2Vec2 from Facebook [Wav2Vec2](https://github.com/facebookresearch/fairseq/blob/main/examples/wav2vec/README.md)
-- Inspired by [Thai Dev](https://www.youtube.com/watch?v=ekhFo-6JzLQ&t=28s)
