@@ -12,7 +12,7 @@ Pretrain Model: [Huggingface](https://huggingface.co/metythorn/khmer-asr-openslr
 ## Installation
 
 
-#### Install from source
+#### Install from PyPI
 ```sh
 pip install sdab
 ```
