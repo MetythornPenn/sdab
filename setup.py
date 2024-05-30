@@ -16,7 +16,7 @@ requirements = [
 
 setup(
     name='sdab',
-    version='0.01',
+    version='0.1.0',
     packages=['sdab'],
     url='https://github.com/MetythornPenn/sdab.git',
     license='Apache Software License 2.0',
@@ -28,14 +28,9 @@ setup(
     long_description=(read('README.md')),
     long_description_content_type='text/markdown',
 	classifiers= [
-		'Development Status :: 1 - Planning',
-		'Intended Audience :: Developers',
 		'Natural Language :: Khmer',
 		'License :: OSI Approved :: Apache Software License',
 		'Operating System :: OS Independent',
-		'Programming Language :: Python',
 		'Programming Language :: Python :: 3',
-		'Programming Language :: Python :: Implementation :: CPython',
-		'Topic :: Scientific/Engineering',
 	],
 )
