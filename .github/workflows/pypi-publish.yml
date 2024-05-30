@@ -1,8 +1,10 @@
 name: Upload package to PyPI
 
 on:
-  release:
-    types: [created]
+  push
+  
+  # release:
+  #   types: [created]
 
 jobs:
   deploy:
@@ -30,4 +32,3 @@ jobs:
         password: ${{ secrets.PYPI_API_TOKEN }}
 
 
-        
