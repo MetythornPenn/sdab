@@ -57,6 +57,6 @@ print(sdab.result)
 - `return`: Khmer text from ASR
 
 ## Reference 
-- Inspired by [Techcast](https://www.youtube.com/watch?v=ekhFo-6JzLQ&t=28s)
+- Inspired by [Bong Vitou Phy](https://huggingface.co/vitouphy/wav2vec2-xls-r-300m-khmer) | [Techcast](https://www.youtube.com/watch?v=ekhFo-6JzLQ&t=28s)
 - Khmer word segmentation from SeangHay [khmercut](https://github.com/seanghay/khmercut.git) | [khmersegment](https://github.com/seanghay/khmersegment)
 - Wav2Vec2 from Facebook [Wav2Vec2](https://github.com/facebookresearch/fairseq/blob/main/examples/wav2vec/README.md)
