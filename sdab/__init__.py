@@ -35,7 +35,7 @@ class Sdab:
         model_name: Optional[str] = None,
         model_type: Optional[str] = None,  # 'wav2vec2' or 'whisper'
         tokenized: bool = False,
-        device: str = "cpu",
+        device: str = "cuda" if torch.cuda.is_available() else "cpu",
         torch_dtype: Optional[torch.dtype] = None,
     ):
         self.file_path = file_path
