@@ -1,4 +1,4 @@
-# Sdab
+# Sdab (ស្តាប់)
 
 #### Khmer Automatic Speech Recognition (Whisper + Wav2Vec2)
 
