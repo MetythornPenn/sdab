@@ -89,12 +89,6 @@ print(sd.transcribe())
 - `device`: `"cpu"` or any PyTorch device string (for example `"cuda:0"`).
 - `torch_dtype`: Override the dtype (defaults to `float32` on CPU and `float16` on CUDA).
 
-## Tips
-- Whisper expects mono 16 kHz input; Sdab automatically downsamples and squeezes channels.
-- Models are downloaded from Hugging Face the first time you reference them. Keep an eye on cache size in `~/.cache/huggingface`.
-- For long recordings consider chunking/streaming outside of Sdab to stay within GPU memory.
-- Results are returned from `sd.transcribe()` directly; the class no longer stores a separate `sd.result`.
-- Errors while loading a model are wrapped in a helpful `RuntimeError` with the model name.
 
 ## References
 - Inspired by [Bong Vitou Phy](https://huggingface.co/vitouphy/wav2vec2-xls-r-300m-khmer) and the accompanying [Techcast episode](https://www.youtube.com/watch?v=ekhFo-6JzLQ&t=28s).
