@@ -7,6 +7,7 @@ Sdab is a lightweight helper around Hugging Face ASR models with a focus on Khme
 - License: [Apache-2.0](https://github.com/MetythornPenn/sdab/blob/main/LICENSE)
 - Default Whisper model: [metythorn/whisper-large-v3](https://huggingface.co/metythorn/whisper-large-v3)
 - Whisper turbo Whisper model: [metythorn/whisper-large-v3-turbo](https://huggingface.co/metythorn/whisper-large-v3-turbo)
+- Whisper small model: [metythorn/whisper-small](https://huggingface.co/metythorn/whisper-small)
 - Wav2Vec2 model: [metythorn/wav2vec2-xls-r-300m](https://huggingface.co/metythorn/wav2vec2-xls-r-300m)
 
 ## Features
