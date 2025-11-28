@@ -6,26 +6,24 @@ Sdab is a lightweight helper around Hugging Face ASR models with a focus on Khme
 
 - License: [Apache-2.0](https://github.com/MetythornPenn/sdab/blob/main/LICENSE)
 - Default Whisper model: [metythorn/whisper-large-v3](https://huggingface.co/metythorn/whisper-large-v3)
-- Optional turbo Whisper model: [metythorn/whisper-large-v3-turbo](https://huggingface.co/metythorn/whisper-large-v3-turbo)
-- Example Wav2Vec2 model: [metythorn/wav2vec2-xls-r-300m](https://huggingface.co/metythorn/wav2vec2-xls-r-300m)
+- Whisper turbo Whisper model: [metythorn/whisper-large-v3-turbo](https://huggingface.co/metythorn/whisper-large-v3-turbo)
+- Wav2Vec2 model: [metythorn/wav2vec2-xls-r-300m](https://huggingface.co/metythorn/wav2vec2-xls-r-300m)
 
 ## Features
-- 🔁 Automatically detects Whisper vs Wav2Vec2 when you pass a Hugging Face repo ID or local directory.
-- 🎧 Handles loading, mono conversion, and resampling to 16 kHz with `torchaudio`.
-- ⚙️ Lets you pick CPU/GPU device and numerical precision to match your hardware.
-- 🧪 Includes a sample audio clip for quick testing.
+- Automatically detects Whisper vs Wav2Vec2 when you pass a Hugging Face repo ID or local directory.
+- Handles loading, mono conversion, and resampling to 16 kHz with `torchaudio`.
+- Lets you pick CPU/GPU device and numerical precision to match your hardware.
+- Includes a sample audio clip for quick testing.
 
 ## Installation
 
-> It is highly recommended to work inside a virtual environment.
+> Install from PyPI
 
 ```sh
 python -m pip install --upgrade pip
 pip install torch torchaudio transformers soundfile
 pip install sdab
 ```
-
-GPU users should install the right `torch`/`torchaudio` binaries for their CUDA version as described on https://pytorch.org/get-started/locally/.
 
 To install from source:
 
@@ -68,6 +66,8 @@ print(sd.transcribe())
 Need the faster turbo checkpoint? Provide it explicitly:
 
 ```python
+from sdab import Sdab
+
 sd = Sdab("audio.wav", model_name="metythorn/whisper-large-v3-turbo")
 print(sd.transcribe())
 ```
@@ -77,11 +77,7 @@ print(sd.transcribe())
 ```python
 from sdab import Sdab
 
-sd = Sdab(
-    "audio.wav",
-    model_name="metythorn/wav2vec2-xls-r-300m",
-    model_type="wav2vec2",  # optional; Sdab will infer from the model name
-)
+sd = Sdab("audio.wav", model_name="metythorn/wav2vec2-xls-r-300m")
 print(sd.transcribe())
 ```
 
